@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var geracaoDiariaPorPlaca = potenciaPlaca * irradiacaoSolar / 1000;
             var geracaoDiariaTotal = geracaoDiariaPorPlaca * quantidadePlacas;
             var geracaoMensalEstimada = geracaoDiariaTotal * 30;
-            var consumoMensalEsperado = 600; // Altere conforme necessário
+            var consumoMensalEsperado = 400; // 
 
             var excedenteMensal = geracaoMensalEstimada - consumoMensalEsperado;
 
