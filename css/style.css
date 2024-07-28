@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/*NAVBAR*/
+
+header{
+    background-color: #333;
+    padding: 10px 10px;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-menu{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+.navbar-link:hover{
+    color: #ddd;
+}
+
+/*BANNER*/
+
+.main-banner{
+    background-image: url('../img/wall.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.button-container{
+    text-align: center;
+}
+.main-banner button{
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.main-banner button:hover{
+    background-color: #414141;
+}
+
+/*ABOUT*/
+
+.about-container ul li img{
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.about-container{
+    padding: 5rem 0;
+}
+
+.about-container ul{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about-container li{
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-container h3{
+    margin-bottom: 25px;
+}
+
+.about-container p{
+    line-height: 24px;
+}
+
+/*GOAL*/
+
+.project-goal-container{
+    background-image: url(../img/wall.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;  
+    height: 500px;
+    background-attachment: fixed;  
+}
+
+.goal h3{
+    margin-bottom: 10px;
+}
+
+.goal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    border: 5px solid transparent;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.goal::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid black;
+    box-sizing: border-box;
+    animation: border-move 4s linear infinite;
+}
+
+@keyframes border-move {
+    0% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    25% {
+        clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 100% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 100% 100%);
+    }
+    75% {
+        clip-path: polygon(0% 0%, 100% 0%, 0% 0%, 0% 100%);
+    }
+    100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+/*CONTACT*/
+
+.contact-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center
+    ;
+}
+
+.contact-container .contact{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.contact-container .contact h3{
+    margin-bottom: 10px;
+}
+
+.contact-container input,
+.contact-container textarea, 
+button{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact-container textarea{
+    height: 200px;
+    resize: vertical;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus{
+    border-color: #333;
+    outline: none;
+}
+
+.contact-container button{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-container button:hover{
+    background-color: #414141;
+}
+
+/*FOOTER*/
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+footer p{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
