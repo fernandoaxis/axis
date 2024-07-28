@@ -1,155 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <title>Solar FEAX :D</title>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">FEAX</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#diag-1">Diagnóstico</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#levant-1">Levantamento</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#inverter-1">Inversor</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <nav class="navbar-container">
+            <a class="navbar-logo" href="index.html">Axis</a>
+            <ul class="navbar-menu">
+                <li><a href="#" class="navbar-link">Home</a></li>
+                <li><a href="#" class="navbar-link">Sobre</a></li>
+                <li><a href="#" class="navbar-link">Contato/Feedback</a></li>
+            </ul>
         </nav>
     </header>
-    <!-- Fim do Cabeçalho -->
-
-    <!-- Container para Diagnóstico de Consumo -->
-    <div class="container my-5" id="diag-1">
-        <h2 class="mb-4">Diagnóstico do Perfil de Consumo da Instalação</h2>
-        <p>Digite os valores aproximados ou iguais de acordo com a conta de energia em kWh</p>
-        <div class="row">
-            <!-- Campos de entrada para consumo mensal -->
-            <div class="col-md-6 mb-3">
-                <label for="d-1">Janeiro</label>
-                <input type="number" id="d-1" class="form-control calc">
+    <main>
+        <section class="main-banner">
+            <div class="button-container">
+                <button>Visite o site de dimensionamento</button>
             </div>
-            <div class="col-md-6 mb-3">
-                <label for="d-2">Fevereiro</label>
-                <input type="number" id="d-2" class="form-control calc">
+        </section>
+        <section class="about-container">
+            <ul>
+                <li>
+                        <img src="img/residencia.png" alt="icon_residence">
+                        <h3>Dimensionamento residencial</h3>
+                        <p>Nossa aplicação web oferece uma solução prática e eficiente para o
+                             dimensionamento de instalações elétricas residenciais. Com ela, 
+                             você pode calcular de forma precisa a distribuição de carga, dimensionar 
+                             circuitos e condutores, e selecionar os disjuntores adequados, garantindo 
+                             segurança e eficiência energética. Seguindo as normas técnicas, nossa ferramenta
+                              simplifica o planejamento elétrico, proporcionando confiabilidade e conveniência
+                               para suas instalações</p>
+                </li>
+                <li>
+                        <img src="img/motor.png" alt="icon_motor">
+                        <h3>Dimensionamento industrial</h3>
+                        <p>Nossa ferramenta especializada em dimensionamento industrial permite calcular e planejar 
+                            sistemas elétricos robustos para ambientes industriais. Oferecemos suporte para 
+                            dimensionamento de motores, máquinas e equipamentos, garantindo que a instalação 
+                            elétrica suporte altas cargas e ofereça desempenho confiável. Seguindo as normas 
+                            técnicas, nossa aplicação assegura segurança, eficiência e conformidade para projetos
+                             industriais complexos.</p>
+                </li>
+                <li>
+                         <img src="img/solar.png" alt="icon_solar">
+                         <h3>Dimensionamento fotovoltaico</h3>
+                         <p>Desenvolvemos uma solução completa para dimensionamento de sistemas fotovoltaicos. Nossa aplicação auxilia no cálculo da quantidade de painéis solares, inversores e baterias necessárias para atender à demanda energética de residências e indústrias. Com base em dados técnicos e regulatórios, nosso software facilita o planejamento e a implementação de sistemas de energia solar, promovendo sustentabilidade e economia de energia.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="project-goal-container">
+            <div class="goal">
+                <h3>Objetivo</h3>
+                <p>O objetivo do projeto é facilitar o dimensionamento de sistemas fotovoltaicos
+                 on-grid, off-grid e híbridos, bem como o dimensionamento de instalações elétricas residenciais e industriais</p>
             </div>
-            <div class="col-md-6 mb-3">
-                <label for="d-3">Março</label>
-                <input type="number" id="d-3" class="form-control calc">
+        </section>
+    </main>
+    <section class="contact-container">
+            <div class="contact">
+                <h3>Contato/Feedback</h3>
+                <input type="text" id="name" placeholder="Digite seu nome">
+                <input type="email" id="email" placeholder="Digite seu email">
+                <textarea name="menssage" id="menssage" placeholder="Feedback/Contato"></textarea>
+                <button type="submit">Enviar</button>
             </div>
-            <div class="col-md-6 mb-3">
-                <label for="d-4">Abril</label>
-                <input type="number" id="d-4" class="form-control calc">
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="d-5">Maio</label>
-                <input type="number" id="d-5" class="form-control calc">
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="d-6">Junho</label>
-                <input type="number" id="d-6" class="form-control calc">
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="d-7">Julho</label>
-                <input type="number" id="d-7" class="form-control calc">
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="d-8">Agosto</label>
-                <input type="number" id="d-8" class="form-control calc">
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="d-9">Setembro</label>
-                <input type="number" id="d-9" class="form-control calc">
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="d-10">Outubro</label>
-                <input type="number" id="d-10" class="form-control calc">
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="d-11">Novembro</label>
-                <input type="number" id="d-11" class="form-control calc">
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="d-12">Dezembro</label>
-                <input type="number" id="d-12" class="form-control calc">
-            </div>
-        </div>
-
-        <!-- Exibição do consumo médio mensal e diário -->
-        <div class="mt-4">
-            <p class="font-weight-bold">Consumo médio do mês = <span id="consumo-mensal"></span></p>
-            <p class="font-weight-bold">Consumo médio do dia = <span id="consumo-diario"></span></p>
-        </div>
-    </div>
-
-    <!-- Avaliação da Quantidade de Painéis -->
-    <div class="container my-5" id="levant-1">
-        <h2 class="mb-4">Levantamento da Quantidade de Placas</h2>
-        <div class="row">
-            <!-- Campos de entrada para informações dos painéis solares -->
-            <div class="col-md-4 mb-3">
-                <label for="potencia-placa">Potência da placa solar (W):</label>
-                <input type="number" id="potencia-placa" class="form-control">
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="irradiacao-solar">Índice de irradiação solar:</label>
-                <input type="number" id="irradiacao-solar" class="form-control">
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="quantidade-placas">Quantidade de placas:</label>
-                <input type="number" id="quantidade-placas" class="form-control">
-            </div>
-        </div>
-
-        <!-- Exibição da geração mensal e excedente -->
-        <div class="mt-4">
-            <p class="font-weight-bold">Geração mensal = <span id="geracao-mensal"></span></p>
-            <p class="font-weight-bold">Excedente de geração mensal = <span id="excedente-mensal"></span></p>
-        </div>
-
-        <!-- Link para o índice de radiação solar -->
-        <a href="http://www.cresesb.cepel.br/index.php?section=sundata&">
-            ÍNDICE DE RADIAÇÃO SOLAR(CLIQUE AQUI PARA VERIFICAR A RADIAÇÃO DA SUA REGIÃO)</a>
-            
-        <!-- Informações do Inversor -->
-
-        <div class="container-inversor my-5" id="inverter-1">
-            <h2 class="mb-4">Dimensionamento do inversor</h2>
-            <div class="info-container-inversor">
-                <label for="qtd-placas">Quantidade de placas: </label>
-                <input type="number" name="qtd-placas" id="qtd-placas" class="form-control">
-                <label for="potencia-placas-inversor">Potência das placas (W): </label>
-                <input type="number" name="potencia-placas-inversor" id="potencia-placas-inversor" class="form-control">
-            </div>
-            <div class="container-inversor-dimensionado">
-                <p>Potência mínima do inversor em kW = <span id="potencia-inversor"></span></p>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Bibliotecas JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </section>
+    <footer><p>&copy; 2024 Axis. Todos os direitos reservados.</p></footer>
 </body>
 </html>
