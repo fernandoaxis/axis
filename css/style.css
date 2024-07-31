@@ -275,9 +275,8 @@ footer p{
     .contact-container p{
         font-size: 0.9em;
     }
-    
-    .goal{
-        width: 300px;
+    .goal p{
+        width: 200px;
     }
 }
 
