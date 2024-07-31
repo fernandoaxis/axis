@@ -136,7 +136,6 @@ header{
     box-sizing: border-box;
     position: relative;
     padding: 20px;
-    border: 2px solid black;
 }
 .goal p{
     font-weight: bold;
