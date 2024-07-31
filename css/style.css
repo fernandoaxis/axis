@@ -132,41 +132,15 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
     max-width: 600px;
-    border: 5px solid transparent;
+    box-sizing: border-box;
     position: relative;
-    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid black;
 }
-
-.goal::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 5px solid black;
-    box-sizing: border-box;
-    animation: border-move 4s linear infinite;
-}
-
-@keyframes border-move {
-    0% {
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    }
-    25% {
-        clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 100% 100%);
-    }
-    50% {
-        clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 100% 100%);
-    }
-    75% {
-        clip-path: polygon(0% 0%, 100% 0%, 0% 0%, 0% 100%);
-    }
-    100% {
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    }
+.goal p{
+    font-weight: bold;
+    font-style: italic;
 }
 
 /*CONTACT*/
@@ -241,10 +215,52 @@ footer p{
     margin: 0;
 }
 
+@media (max-width: 480px) {
+    .navbar-logo{
+        font-size: 1.2em;
+    }
 
+    .main-banner button{
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    .about-container ul{
+        flex-direction: column;
+    }
+    .about-container h3,
+    .goal h3,
+    .contact-container h3{
+        font-size: 1.2em;
+    }
 
+    .about-container p,
+    .goal p,
+    .contact-container p{
+        font-size: 0.9em;
+    }
+    
+    .goal{
+        width: 300px;
+    }
+}
 
+@media (max-width: 768px) {
+    .main-banner{
+        height: 300px;
+    }
 
+    .about-container ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-goal-container{
+        height: 300px;
+    }
+    .goal{
+        width: 400px;
+    }
+}
 
 
 
