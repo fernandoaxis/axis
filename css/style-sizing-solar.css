@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/*NAVBAR*/
+
+header{
+    background-color: #000000;
+    padding: 10px 10px;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-menu{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+.navbar-link:hover{
+    color: #ddd;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 4ch; 
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(243, 218, 55);
+    }
+  }
+  
+  .typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .1em solid black; 
+    white-space: nowrap;
+    animation: typing 2s steps(4, end), blink-caret .75s step-end infinite;
+  }
+
+
+/*SIZING SOLAR*/
+.month-container h3{
+    text-align: center;
+    margin-top: 50px;
+}
+.month-flex{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.month-1, .month-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.month-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.month-item label {
+    width: 100px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.month-item input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #373636;
+    border-radius: 4px;
+}
+
+
+
+/*Reponsividade*/
+@media (max-width: 768px) {
+    .month-flex {
+        flex-direction: column;
+    }
+
+    .month-1, .month-2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+}
