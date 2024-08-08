@@ -163,26 +163,34 @@ a:active{
     background-attachment: fixed;  
 }
 
-.goal h3{
+.goal-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.goal-container .goal h3{
     margin-bottom: 20px;
     font-style: italic;
+    text-align: center;
 }
 
 .goal{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: 600px;
+    text-align:center;
+    max-width: 400px;
     box-sizing: border-box;
     position: relative;
     padding: 20px;
+    margin: 30px;
 }
 .goal p{
     font-size: 1.1rem;
     font-weight: bold;
-    width: 500px;
+    width: 400px;
 }
 
 
